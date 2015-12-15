@@ -64,10 +64,10 @@ namespace Melia.Channel.Network
 
 			packet.PutLpString(conn.SessionKey);
 
-			// [i10911? (2015-12-01)]
-			// Not sure when exactly this was added, skipped a few updates.
+			// [i10911 (2015-12-01)] ?
+			// [k18803 (2015-12-15)] Removed?
 			{
-				packet.PutShort(0xFB31); // ?
+				//packet.PutShort(0xFB31);
 			}
 
 			packet.PutInt(character.Handle);

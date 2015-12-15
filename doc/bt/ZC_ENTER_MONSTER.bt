@@ -22,12 +22,18 @@ int hp, maxHp;
 short s1;
 float i1;
 
+// [k18803 (2015-12-15)] ?
+short s3;
+
 // MONSTER
 int monsterId;
 int i2;
 int maxHp;
-short s2; // max shield?
-char bin1[2];
+
+// [k18803 (2015-12-15)] Removed?
+//short s2; // max shield?
+//char bin1[2];
+
 int level;
 float sdr;
 byte b2;
@@ -44,4 +50,5 @@ lpString dialogName;
 lpString warpName; // ?
 lpString str3;
 
-char bin3[b3];
+if(b3 > 0)
+    char bin3[b3];

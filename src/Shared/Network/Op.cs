@@ -680,7 +680,7 @@ namespace Melia.Shared.Network
 		public const int CZ_CART_POSITION = 0xE17; // Size: 26
 		public const int CZ_REQ_RIDE_CART = 0xE18; // Size: 18
 		public const int CZ_DUMMYPC_SKILL_POS = 0xE19; // Size: 26
-		public const int CZ_NGS = 0xE1A; // Size: 10254
+		public const int CZ_NGS = 0xE1A; // Size: 0
 		public const int CZ_PARTY_MEMBER_SKILL_USE = 0xE1B; // Size: 0
 		public const int CZ_PARTY_MEMBER_SKILL_ACCEPT = 0xE1C; // Size: 22
 		public const int CZ_SYSTEM_LOG_TO_SERVER = 0xE1D; // Size: 1099
@@ -1290,7 +1290,7 @@ namespace Melia.Shared.Network
 			_sizes[Op.CZ_CART_POSITION] = 26;
 			_sizes[Op.CZ_REQ_RIDE_CART] = 18;
 			_sizes[Op.CZ_DUMMYPC_SKILL_POS] = 26;
-			_sizes[Op.CZ_NGS] = 10254;
+			_sizes[Op.CZ_NGS] = 0;
 			_sizes[Op.CZ_PARTY_MEMBER_SKILL_USE] = 0;
 			_sizes[Op.CZ_PARTY_MEMBER_SKILL_ACCEPT] = 22;
 			_sizes[Op.CZ_SYSTEM_LOG_TO_SERVER] = 1099;

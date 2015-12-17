@@ -5,7 +5,7 @@
 [
 // Weapons
 //---------------------------------------------------------------------------
-{ itemId: 101101, className: "SWD01_101", name: "Warp Scroll", category: 1, weight: 90, maxStack: 1 },
+{ itemId: 101101, className: "SWD01_101", name: "Old Gladius", category: 1, weight: 90, maxStack: 1 },
 { itemId: 101102, className: "SWD01_102", name: "Gladius", category: 1, weight: 90, maxStack: 1 },
 { itemId: 101103, className: "SWD01_103", name: "Crude Falchion", category: 1, weight: 120, maxStack: 1 },
 { itemId: 101104, className: "SWD01_104", name: "Crude Kaskara", category: 1, weight: 120, maxStack: 1 },
@@ -635,21 +635,21 @@
 
 // Armors
 //---------------------------------------------------------------------------
-{ itemId: 2, className: "NoHat", name: "Wizard Slayer", category: 2, weight: 1, maxStack: 1 },
+{ itemId: 2, className: "NoHat", name: "Wooden Shield", category: 2, weight: 1, maxStack: 1 },
 { itemId: 4, className: "NoOuter", name: "Empty_Outer", category: 2, weight: 1, maxStack: 1 },
-{ itemId: 5, className: "NoPants", name: "Light Gloves", category: 2, weight: 1, maxStack: 1 },
-{ itemId: 6, className: "NoGloves", name: "Kozuka", category: 2, weight: 1, maxStack: 1 },
+{ itemId: 5, className: "NoPants", name: "Empty_Pants", category: 2, weight: 1, maxStack: 1 },
+{ itemId: 6, className: "NoGloves", name: "Shovel", category: 2, weight: 1, maxStack: 1 },
 { itemId: 7, className: "NoBoots", name: "Empty_Boots", category: 2, weight: 1, maxStack: 1 },
 { itemId: 8, className: "NoShirt", name: "Necklace", category: 2, weight: 1, maxStack: 1 },
 { itemId: 9, className: "NoRing", name: "Empty_weapon", category: 2, weight: 1, maxStack: 1 },
-{ itemId: 10, className: "NoNeck", name: "Empty_helmet", category: 2, weight: 1, maxStack: 1 },
+{ itemId: 10, className: "NoNeck", name: "Empty_Neck", category: 2, weight: 1, maxStack: 1 },
 { itemId: 10000, className: "NoHelmet", name: "Empty_helmet", category: 2, weight: 0, maxStack: 1 },
 { itemId: 10001, className: "murmillo_helmet", name: "Murmillo Helmet", category: 2, weight: 0, maxStack: 1 },
 { itemId: 10002, className: "helmet_plaguedoctor", name: "플레이그닥터 헬멧", category: 2, weight: 0, maxStack: 1 },
 { itemId: 11000, className: "NoArmband", name: "Empty_armband", category: 2, weight: 0, maxStack: 1 },
 { itemId: 12101, className: "NoHair", name: "없음_hair", category: 2, weight: 0, maxStack: 1 },
-{ itemId: 12111, className: "HAIR_M_101", name: "Scheduled for deletion", category: 2, weight: 0, maxStack: 1 },
-{ itemId: 12112, className: "HAIR_M_102", name: "Dunkel Flamberge", category: 2, weight: 0, maxStack: 1 },
+{ itemId: 12111, className: "HAIR_M_101", name: "헤어:테리우스", category: 2, weight: 0, maxStack: 1 },
+{ itemId: 12112, className: "HAIR_M_102", name: "헤어:댄디 웨이브컬", category: 2, weight: 0, maxStack: 1 },
 { itemId: 12501, className: "HAIR_F_101", name: "헤어:볼륨웨이브 트윈테일", category: 2, weight: 0, maxStack: 1 },
 { itemId: 12502, className: "HAIR_F_102", name: "헤어:볼륨웨이브", category: 2, weight: 0, maxStack: 1 },
 { itemId: 221101, className: "SHD01_101", name: "Wooden Shield", category: 2, weight: 80, maxStack: 1 },
@@ -1538,7 +1538,7 @@
 { itemId: 11108, className: "ABAND01_108", name: "실버 암밴드", category: 3, weight: 10, maxStack: 1 },
 { itemId: 11109, className: "ABAND01_109", name: "다이아 암밴드", category: 3, weight: 10, maxStack: 1 },
 { itemId: 11110, className: "ABAND01_110", name: "술 장식 암밴드", category: 3, weight: 10, maxStack: 1 },
-{ itemId: 11111, className: "ABAND01_111", name: "Lv1 Card Collection", category: 3, weight: 10, maxStack: 1 },
+{ itemId: 11111, className: "ABAND01_111", name: "샤먼 암밴드", category: 3, weight: 10, maxStack: 1 },
 { itemId: 11112, className: "ABAND01_112", name: "오리엔트 암밴드", category: 3, weight: 10, maxStack: 1 },
 { itemId: 11113, className: "ABAND01_113", name: "골든 암밴드", category: 3, weight: 10, maxStack: 1 },
 { itemId: 11114, className: "ABAND01_114", name: "잎사귀 무늬 암밴드", category: 3, weight: 10, maxStack: 1 },

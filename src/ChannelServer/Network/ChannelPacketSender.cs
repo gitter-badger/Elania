@@ -161,19 +161,23 @@ namespace Melia.Channel.Network
 			packet.PutInt(-1); // titleAchievmentId
 			packet.PutInt(0);
 			packet.PutByte(0);
+			packet.PutInt(0); // [k18713 (2015-12-12)] ?
 			packet.AddCommander(character);
-			packet.PutString("None", 49); // Party name
+
+			// [k18713 (2015-12-12)] Removed?
+			//packet.PutString("None", 49); // Party name
 
 			// [i10622 (2015-10-22)] ?
+			// [k18713 (2015-12-12)] Removed?
 			{
-				packet.PutShort(0);
-				packet.PutInt(0);
-				packet.PutInt(0);
-				packet.PutInt(0);
-				packet.PutInt(0);
-				packet.PutInt(0);
-				packet.PutInt(0);
-				packet.PutInt(0);
+				//packet.PutShort(0);
+				//packet.PutInt(0);
+				//packet.PutInt(0);
+				//packet.PutInt(0);
+				//packet.PutInt(0);
+				//packet.PutInt(0);
+				//packet.PutInt(0);
+				//packet.PutInt(0);
 			}
 
 			character.Connection.Send(packet);

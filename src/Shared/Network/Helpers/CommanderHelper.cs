@@ -37,6 +37,11 @@ namespace Melia.Shared.Network.Helpers
 
 			packet.PutShort(commander.Hair);
 			packet.PutShort(0); // Pose
+
+			// [k19532 (2015-12-17)] ?
+			{
+				packet.PutInt(0);
+			}
 		}
 	}
 

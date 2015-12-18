@@ -50,6 +50,7 @@ namespace Melia.Shared.Const
 		Bracelet1,
 		Bracelet2,
 		Necklace,
+		Hair, // [k19532 (2015-12-17)]
 	}
 
 	public enum InventoryItemRemoveMsg : byte
@@ -77,12 +78,15 @@ namespace Melia.Shared.Const
 		/// <summary>
 		/// Ammount of equip slots.
 		/// </summary>
-		public const int EquipSlotCount = 20;
+		/// <remarks>
+		/// [k19532 (2015-12-17)] 20->21, Hair slot added
+		/// </remarks>
+		public const int EquipSlotCount = 21;
 
 		/// <summary>
 		/// Ids of the items equipped by default.
 		/// (Literally empty items, NoHat, NoWeapon, etc.)
 		/// </summary>
-		public static readonly int[] DefaultItems = new int[EquipSlotCount] { 2, 2, 4, 8, 6, 7, 10000, 11000, 9999996, 9999996, 4, 9, 9, 4, 9, 9, 9, 9, 9, 10 };
+		public static readonly int[] DefaultItems = new int[EquipSlotCount] { 2, 2, 4, 8, 6, 7, 10000, 11000, 9999996, 9999996, 4, 9, 9, 4, 9, 9, 9, 9, 9, 10, 12101 };
 	}
 }

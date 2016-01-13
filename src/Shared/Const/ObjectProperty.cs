@@ -48,7 +48,6 @@ namespace Melia.Shared.Const
 			public const short ReceiveGiftMedal = 6304;
 			public const short ChatStopTime = 8476;
 			public const short TradeStopTime = 8477;
-			public const short TokenTime = 9048;
 			public const short PremiumMedal = 10021;
 		}
 

@@ -330,6 +330,7 @@
 { mapId: 4150, className: "gid_zachariel_01", engName: "?", localKey: "?" },
 { mapId: 4160, className: "gid_rokas_01", engName: "?", localKey: "?" },
 { mapId: 4170, className: "gid_velniasprison_51_3", engName: "?", localKey: "?" },
+{ mapId: 4180, className: "id_remains3", engName: "?", localKey: "?" },
 { mapId: 10001, className: "mission_instance", engName: "?", localKey: "?" },
 { mapId: 20000, className: "infinite_map", engName: "Infinite Map", localKey: "ETC_20150317_001368" },
 { mapId: 20010, className: "pvp_tournament", engName: "Team Battle League Tournament", localKey: "ETC_20150729_013623" },

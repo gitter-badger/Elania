@@ -1,0 +1,14 @@
+//--------------------------------------
+//--- 010 Editor v6.0.2 Binary Template
+//
+// File: CZ_EXTEND_WAREHOUSE.bt
+// Author: exec
+// Revision:
+// Purpose:
+//--------------------------------------
+
+short op;
+int checksum;
+int sequence;
+
+byte b1;

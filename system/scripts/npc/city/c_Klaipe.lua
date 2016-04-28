@@ -34,7 +34,7 @@ addnpc(153005, "ETC_20150317_009212", "c_Klaipe", 6, -1, -760, 315, "npc_dummy")
 addnpc(47521, "ETC_20150317_007299", "c_Klaipe", -22, -1, -757, 315, "npc_dummy")
 addnpc(152005, "ETC_20150317_009214", "c_Klaipe", 68.44363, 148.8388, 485.8954, -59, "npc_dummy")
 addnpc(152004, "ETC_20150317_009215", "c_Klaipe", -345.0014, 148.8224, 283.8124, 0, "npc_dummy")
-addnpc(154018, "ETC_20150414_011199", "c_Klaipe", 262.0322, 79.47649, 233.2017, 45, "npc_dummy")
+addnpc(154018, "ETC_20150414_011199", "c_Klaipe", 262.0322, 79.47649, 233.2017, 45, "npc_storagekeeperrita")
 addnpc(57224, "ETC_20150414_011198", "c_Klaipe", -893.4678, 240.3878, 74.93089, 45, "npc_dummy")
 addnpc(154039, "ETC_20150317_007031", "c_Klaipe", -206.574, 148.8251, 98.63973, 0, "npc_dummy")
 addnpc(20068, "ETC_20151224_019887", "c_Klaipe", 285, 79, 78, 45, "npc_dummy")
@@ -60,4 +60,10 @@ function npc_equipmentmerchantdunkel()
 	elseif selection == "armor" then
 		openshop("Klapeda_Armor")
 	end
+end
+
+-- Storage Keeper Rita
+function npc_storagekeeperrita()
+	msg("WAREHOUSE_DLG")
+	openwarehouse()
 end

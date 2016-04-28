@@ -1791,6 +1791,19 @@ namespace Melia.Channel.Network
 			character.Map.Broadcast(packet, character);
 		}
 
+		/// <summary>
+		/// Sends ZC_CUSTOM_DIALOG to character's connection.
+		/// </summary>
+		/// <param name="character"></param>
+		/// <param name="str"></param>
+		public static void ZC_CUSTOM_DIALOG(Character character, string str)
+		{
+			var packet = new Packet(Op.ZC_CUSTOM_DIALOG);
+			packet.PutString(str, 69);
+
+			character.Connection.Send(packet);
+		}
+
 		public static void DUMMY(ChannelConnection conn)
 		{
 		}

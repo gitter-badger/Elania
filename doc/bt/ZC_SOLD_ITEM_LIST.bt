@@ -13,7 +13,7 @@ short op;
 int sequence;
 
 short size;
-byte b1;
+byte inventoryType;
 int count; // ?
 byte b2;
 if (count > 0)

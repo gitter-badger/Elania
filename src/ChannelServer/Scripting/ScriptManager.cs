@@ -112,6 +112,7 @@ namespace Melia.Channel.Scripting
 			Register(countitem);
 			Register(additem);
 			Register(removeitem);
+			Register(openwarehouse);
 
 			// Action
 			Register(warp);
@@ -1460,6 +1461,21 @@ namespace Melia.Channel.Scripting
 				return Melua.melua_error(L, "Unsupported variable type '{0}'.", value.GetType().Name);
 
 			return 1;
+		}
+
+		/// <summary>
+		/// Opens character's warehouse.
+		/// </summary>
+		/// <param name="L"></param>
+		/// <returns></returns>
+		private int openwarehouse(IntPtr L)
+		{
+			var conn = this.GetConnectionFromState(L);
+			var character = conn.SelectedCharacter;
+
+			Send.ZC_CUSTOM_DIALOG(character, "warehouse");
+
+			return Melua.lua_yield(L, 0);
 		}
 	}
 }

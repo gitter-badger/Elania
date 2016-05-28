@@ -55,7 +55,7 @@ end
 
 --- Equipment Merchant Dunkel
 function npc_equipmentmerchantdunkel()
-	local selection,i = nselect("KLAPEDA_Akalabeth_basic28", "weapon:@dicID_^*$ETC_20150317_004443$*^", "armor:@dicID_^*$ETC_20150317_004444$*^", "!@#$Auto_JongLyo#@!")
+	local selection,i = nselect("KLAPEDA_Akalabeth_basic28", ndict("weapon", "ETC_20150317_004443"), ndict("armor", "ETC_20150317_004444"), auto("JongLyo"))
 
 	if selection == "weapon" then
 		openshop("Klapeda_Weapon")
@@ -66,13 +66,13 @@ end
 
 --- Indifferent Widow
 function npc_indifferentwidow()
-	if select("TUTO_GIRL_basic_02", "!@#$TUTO_GIRL_select01#@!", "!@#$Auto_JongLyo#@!") ~= 1 then
+	if select("TUTO_GIRL_basic_02", "!@#$TUTO_GIRL_select01#@!", auto("JongLyo")) ~= 1 then
 		return
 	end
-	if select("TUTO_GIRL_basic_03", "!@#$TUTO_GIRL_select02#@!", "!@#$Auto_JongLyo#@!") ~= 1 then
+	if select("TUTO_GIRL_basic_03", "!@#$TUTO_GIRL_select02#@!", auto("JongLyo")) ~= 1 then
 		return
 	end
-	if select("TUTO_GIRL_basic_04", "!@#$TUTO_GIRL_select03#@!", "!@#$Auto_JongLyo#@!") ~= 1 then
+	if select("TUTO_GIRL_basic_04", "!@#$TUTO_GIRL_select03#@!", auto("JongLyo")) ~= 1 then
 		return
 	end
 
@@ -92,7 +92,7 @@ end
 --- Worried Wife
 -- Tells stories about the various goddesses.
 function npc_worriedwife()
-	if select("KLAPEDA_NPC_04_basic01", "!@#$Auto_KLAPEDA_NPC_04_S1#@!", "!@#$Auto_SinKyeongSseuJi_anNeunDa#@!") ~= 1 then
+	if select("KLAPEDA_NPC_04_basic01", auto("KLAPEDA_NPC_04_S1"), auto("SinKyeongSseuJi_anNeunDa")) ~= 1 then
 		return
 	end
 
@@ -100,12 +100,12 @@ function npc_worriedwife()
 	while selection ~= "leave" do
 		-- Select goddess
 		selection = nselect("KLAPEDA_NPC_04_basic02",
-			"ausrine:!@#$Auto_KLAPEDA_NPC_04_S2#@!",
-			"laima:!@#$Auto_KLAPEDA_NPC_04_S3#@!",
-			"gabija:!@#$Auto_KLAPEDA_NPC_04_S4#@!",
-			"zemyna:!@#$Auto_KLAPEDA_NPC_04_S5#@!",
-			"vakarine:!@#$Auto_KLAPEDA_NPC_04_S6#@!",
-			"leave:!@#$Auto_TteoNanDa#@!"
+			nauto("ausrine", "KLAPEDA_NPC_04_S2"),
+			nauto("laima", "KLAPEDA_NPC_04_S3"),
+			nauto("gabija", "KLAPEDA_NPC_04_S4"),
+			nauto("zemyna", "KLAPEDA_NPC_04_S5"),
+			nauto("vakarine", "KLAPEDA_NPC_04_S6"),
+			nauto("leave", "TteoNanDa")
 		)
 
 		-- Info about selected goddess

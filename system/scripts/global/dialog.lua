@@ -70,3 +70,37 @@ end
 function removesilver(amount)
 	return removeitem(SILVER, amount)
 end
+
+--- Wraps string with the dicID code.
+-- @tparam  string String to wrap.
+-- @treturn string Wrapped string.
+-- @usage dict("ETC_20150317_004443")
+function dict(str)
+	return "@dicID_^*$" .. str .. "$*^"
+end
+
+--- Wraps string with the auto code.
+-- @tparam  string String to wrap.
+-- @treturn string Wrapped string.
+-- @usage auto("JongLyo")
+function auto(str)
+	return "!@#$Auto_" .. str .. "#@!" 
+end
+
+--- Wraps string with the dicID code and prepends the nselect key.
+-- @tparam  string Key for nselect.
+-- @tparam  string String to wrap.
+-- @treturn string Wrapped string.
+-- @usage ndict("test", "ETC_20150317_004443")
+function ndict(key, str)
+	return key .. ":" .. dict(str)
+end
+
+--- Wraps string with the auto code and prepends the nselect key.
+-- @tparam  string Key for nselect.
+-- @tparam  string String to wrap.
+-- @treturn string Wrapped string.
+-- @usage nauto("test", "JongLyo")
+function nauto(key, str)
+	return key .. ":" .. auto(str)
+end

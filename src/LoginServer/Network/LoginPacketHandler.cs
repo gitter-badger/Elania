@@ -286,8 +286,8 @@ namespace Melia.Login.Network
 
 			conn.Account.CreateCharacter(character);
 
-            Send.BC_COMMANDER_CREATE_SLOTID(conn, character);
-            Send.BC_COMMANDER_CREATE(conn, character);
+			Send.BC_COMMANDER_CREATE_SLOTID(conn, character);
+			Send.BC_COMMANDER_CREATE(conn, character);
 		}
 
 		/// <summary>
@@ -323,34 +323,34 @@ namespace Melia.Login.Network
 			Send.BC_COMMANDER_DESTROY(conn, index);
 		}
 
-        /// <summary>
-        /// Sent when the user clicks the barrack number.
-        /// </summary>
-        /// <param name="conn"></param>
-        /// <param name="packet"></param>
-        [PacketHandler(Op.CB_SELECT_BARRACK_LAYER)]
-        public void CB_SELECT_BARRACK_LAYER(LoginConnection conn, Packet packet)
-        {
-            // temporarily resend the current list
-            Send.BC_COMMANDER_LIST(conn);
-        }
+		/// <summary>
+		/// Sent when the user clicks the barrack number.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_SELECT_BARRACK_LAYER)]
+		public void CB_SELECT_BARRACK_LAYER(LoginConnection conn, Packet packet)
+		{
+			// temporarily resend the current list
+			Send.BC_COMMANDER_LIST(conn);
+		}
 
-        /// <summary>
-        /// Sent after character moved somewhere on the barrack screen, updates position?
-        /// </summary>
-        /// <param name="conn"></param>
-        /// <param name="packet"></param>
-        /// <example>
-        /// ([0B 00] [06 00 00 00] [AD 04 00 00]) 02 C5 C4 F0 C1 BD 63 90 41 BF 6F A8 C1 00 00 00 00 00 00 00 00 | C1
-        /// </example>
-        [PacketHandler(Op.CB_COMMANDER_MOVE)]
+		/// <summary>
+		/// Sent after character moved somewhere on the barrack screen, updates position?
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		/// <example>
+		/// ([0B 00] [06 00 00 00] [AD 04 00 00]) 02 C5 C4 F0 C1 BD 63 90 41 BF 6F A8 C1 00 00 00 00 00 00 00 00 | C1
+		/// </example>
+		[PacketHandler(Op.CB_COMMANDER_MOVE)]
 		public void CB_COMMANDER_MOVE(LoginConnection conn, Packet packet)
 		{
 			var index = packet.GetByte();
 			var x = packet.GetFloat();
 			var y = packet.GetFloat();
 			var z = packet.GetFloat();
-			var d1 = packet.GetFloat();	// ?
+			var d1 = packet.GetFloat(); // ?
 			var d2 = packet.GetFloat(); // ?
 
 			// new character created in this case.

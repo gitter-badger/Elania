@@ -10,3 +10,7 @@ creators of compatible client software, and such actions are not endorsed.
 Credits
 -------
 All work done before the creation of this fork is credited to the Aura Project team.
+
+Build Status
+-------
+[![Build Status](https://travis-ci.org/celophi/Sekuya.svg?branch=master)](https://travis-ci.org/celophi/Sekuya)

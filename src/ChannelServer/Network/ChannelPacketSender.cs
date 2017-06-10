@@ -67,12 +67,13 @@ namespace Melia.Channel.Network
 			packet.PutByte(0); // gameMode 0 = NormalMode, 1 = SingleMode
 			packet.PutInt(1292150020);
 			packet.PutByte(3); // isGM (< 3)?
-			packet.PutEmptyBin(10);
+			packet.PutByte(0);
+			packet.PutByte(1);
+			packet.PutEmptyBin(8);
 
-			// [i11257 (2016-03-25)] ?
-			{
-				packet.PutByte(0);
-			}
+			// Determines whether something is possible with integrated servers?
+			packet.PutByte(0);
+			packet.PutByte(0);
 
 			packet.PutLpString(conn.SessionKey);
 
@@ -268,7 +269,7 @@ namespace Melia.Channel.Network
 			packet.PutShort(skills.Length); // count
 
 			packet.PutShort(0); // No compression
-			//packet.BeginZlib();
+								//packet.BeginZlib();
 			foreach (var skill in skills)
 				packet.AddSkill(skill);
 			//packet.EndZlib();
@@ -331,6 +332,15 @@ namespace Melia.Channel.Network
 			packet.PutInt(0); // ?
 
 			character.Connection.Send(packet);
+		}
+
+		/// <summary>
+		/// ?
+		/// </summary>
+		/// <param name="character"></param>
+		public static void ZC_ACHIEVE_POINT(Character character)
+		{
+			var packet = new Packet(Op.ZC_ACHIEVE_POINT);
 		}
 
 		/// <summary>
@@ -403,7 +413,7 @@ namespace Melia.Channel.Network
 			packet.PutShort(abilities.Length); // count
 
 			packet.PutShort(0); // No compression (client handler tests this short for compression marker, comment this line if using compression)
-			//packet.BeginZlib();
+								//packet.BeginZlib();
 			foreach (var ability in abilities)
 			{
 				packet.PutLong(0); // Some kind of GUID? o.O
@@ -461,7 +471,7 @@ namespace Melia.Channel.Network
 				packet.PutInt(item.Value.Price);
 				packet.PutInt(item.Key);
 				packet.PutInt(1); // ?
-				//packet.PutEmptyBin(0);
+								  //packet.PutEmptyBin(0);
 			}
 
 			character.Connection.Send(packet);
@@ -1364,57 +1374,57 @@ namespace Melia.Channel.Network
 		{
 			var packet = new Packet(Op.ZC_IES_MODIFY_LIST);
 
-			packet.PutShort(1); // count
-			{
-				packet.PutLpString("SharedConst");
-				packet.PutShort(2); // row count
-				{
-					packet.PutInt(251);
-					packet.PutShort(1); // col count
-					{
-						packet.PutLpString("Value");
-						packet.PutShort(5); // patch count
-						{
-							packet.PutInt(6);
-							packet.PutLpString("0");
-							packet.PutLpString("0.00");
-							packet.PutLpString("YEJI");
-							packet.PutLpString("2016-3-30 3:15");
-							packet.PutLpString("Change By Tool");
+			//packet.PutShort(1); // count
+			//{
+			//	packet.PutLpString("SharedConst");
+			//	packet.PutShort(2); // row count
+			//	{
+			//		packet.PutInt(251);
+			//		packet.PutShort(1); // col count
+			//		{
+			//			packet.PutLpString("Value");
+			//			packet.PutShort(5); // patch count
+			//			{
+			//				packet.PutInt(6);
+			//				packet.PutLpString("0");
+			//				packet.PutLpString("0.00");
+			//				packet.PutLpString("YEJI");
+			//				packet.PutLpString("2016-3-30 3:15");
+			//				packet.PutLpString("Change By Tool");
 
-							packet.PutInt(5);
-							packet.PutLpString("0");
-							packet.PutLpString("0.00");
-							packet.PutLpString("YEJI");
-							packet.PutLpString("2016-3-30 3:15");
-							packet.PutLpString("Change By Tool");
+			//				packet.PutInt(5);
+			//				packet.PutLpString("0");
+			//				packet.PutLpString("0.00");
+			//				packet.PutLpString("YEJI");
+			//				packet.PutLpString("2016-3-30 3:15");
+			//				packet.PutLpString("Change By Tool");
 
-							packet.PutInt(4);
-							packet.PutLpString("0");
-							packet.PutLpString("0.00");
-							packet.PutLpString("YEJI");
-							packet.PutLpString("2016-3-30 3:15");
-							packet.PutLpString("Change By Tool");
+			//				packet.PutInt(4);
+			//				packet.PutLpString("0");
+			//				packet.PutLpString("0.00");
+			//				packet.PutLpString("YEJI");
+			//				packet.PutLpString("2016-3-30 3:15");
+			//				packet.PutLpString("Change By Tool");
 
-							packet.PutInt(3);
-							packet.PutLpString("0");
-							packet.PutLpString("0.00");
-							packet.PutLpString("YEJI");
-							packet.PutLpString("2016-3-30 3:15");
-							packet.PutLpString("Change By Tool");
+			//				packet.PutInt(3);
+			//				packet.PutLpString("0");
+			//				packet.PutLpString("0.00");
+			//				packet.PutLpString("YEJI");
+			//				packet.PutLpString("2016-3-30 3:15");
+			//				packet.PutLpString("Change By Tool");
 
-							packet.PutInt(2);
-							packet.PutLpString("0");
-							packet.PutLpString("0.00");
-							packet.PutLpString("YEJI");
-							packet.PutLpString("2016-3-30 3:15");
-							packet.PutLpString("Change By Tool");
-						}
-					}
-				}
-			}
+			//				packet.PutInt(2);
+			//				packet.PutLpString("0");
+			//				packet.PutLpString("0.00");
+			//				packet.PutLpString("YEJI");
+			//				packet.PutLpString("2016-3-30 3:15");
+			//				packet.PutLpString("Change By Tool");
+			//			}
+			//		}
+			//	}
+			//}
 
-			conn.Send(packet);
+			//conn.Send(packet);
 		}
 
 		/// <summary>
@@ -1775,6 +1785,23 @@ namespace Melia.Channel.Network
 			packet.PutShort(0); // Some sort of Size for something else. Since this is a "variable size" packet.
 
 			character.Map.Broadcast(packet, character);
+		}
+
+		public static void ZC_SEND_PREMIUM_STATE(Character character)
+		{
+			var packet = new Packet(Op.ZC_SEND_PREMIUM_STATE);
+
+			// unknown why this is 2
+			packet.PutByte(2);
+
+			// hastoken
+			packet.PutByte(1);
+
+			// filetime
+			packet.PutInt(490000);
+			packet.PutInt(2667242);
+
+			character.Connection.Send(packet);
 		}
 
 		public static void DUMMY(ChannelConnection conn)

@@ -24,7 +24,6 @@ namespace Melia.Shared.Const
 
 	public enum StartingCity
 	{
-		Klaipeda = 1,
-		Orsha = 2,
+		Klaipeda = 256
 	}
 }

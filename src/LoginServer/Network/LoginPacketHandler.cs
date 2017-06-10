@@ -202,7 +202,8 @@ namespace Melia.Login.Network
 			var by = packet.GetFloat();
 			var bz = packet.GetFloat();
 			var hair = packet.GetByte();
-			var startingCity = (StartingCity)packet.GetInt();
+
+			var startingCity = StartingCity.Klaipeda;
 
 			// Check starting city
 			if (!Enum.IsDefined(typeof(StartingCity), startingCity))
@@ -285,6 +286,7 @@ namespace Melia.Login.Network
 
 			conn.Account.CreateCharacter(character);
 
+			Send.BC_COMMANDER_CREATE_SLOTID(conn, character);
 			Send.BC_COMMANDER_CREATE(conn, character);
 		}
 
@@ -322,6 +324,18 @@ namespace Melia.Login.Network
 		}
 
 		/// <summary>
+		/// Sent when the user clicks the barrack number.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_SELECT_BARRACK_LAYER)]
+		public void CB_SELECT_BARRACK_LAYER(LoginConnection conn, Packet packet)
+		{
+			// temporarily resend the current list
+			Send.BC_COMMANDER_LIST(conn);
+		}
+
+		/// <summary>
 		/// Sent after character moved somewhere on the barrack screen, updates position?
 		/// </summary>
 		/// <param name="conn"></param>
@@ -336,8 +350,12 @@ namespace Melia.Login.Network
 			var x = packet.GetFloat();
 			var y = packet.GetFloat();
 			var z = packet.GetFloat();
-			var d1 = packet.GetFloat();	// ?
-			var d2 = packet.GetFloat();	// ?
+			var d1 = packet.GetFloat(); // ?
+			var d2 = packet.GetFloat(); // ?
+
+			// new character created in this case.
+			if (index == 0xFF)
+				return;
 
 			// Get character
 			var character = conn.Account.GetCharacterByIndex(index);
@@ -435,6 +453,26 @@ namespace Melia.Login.Network
 
 			// Ignore for now.
 			// TODO: Add option for accepted checksums.
+		}
+
+		/// <summary>
+		/// Sent from the client containing signatures of addons that are not authorized.
+		/// </summary>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_NOT_AUTHORIZED_ADDON_LIST)]
+		public void CB_NOT_AUTHORIZED_ADDON_LIST(LoginConnection conn, Packet packet)
+		{
+			return;
+		}
+
+		/// <summary>
+		/// Request from the client to get channel traffic.
+		/// </summary>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_REQ_CHANNEL_TRAFFIC)]
+		public void CB_REQ_CHANNEL_TRAFFIC(LoginConnection conn, Packet packet)
+		{
+			return;
 		}
 	}
 }

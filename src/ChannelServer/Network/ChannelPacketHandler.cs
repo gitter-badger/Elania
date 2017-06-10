@@ -1120,6 +1120,43 @@ namespace Melia.Channel.Network
 			// transaction.
 			Send.ZC_ADDON_MSG(character, "FAIL_SHOP_BUY");
 		}
+
+		/// <summary>
+		/// Unknown.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_MAP_SEARCH_INFO)]
+		public void CZ_MAP_SEARCH_INFO(ChannelConnection conn, Packet packet)
+		{
+			var unk1 = packet.GetLong();
+			var unk2 = packet.GetShort();
+			var mapName = packet.GetString(16);
+
+			return;
+		}
+
+		/// <summary>
+		/// Unknown.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_WIKI_RECIPE_UPDATE)]
+		public void CZ_WIKI_RECIPE_UPDATE(ChannelConnection conn, Packet packet)
+		{
+			return;
+		}
+
+		/// <summary>
+		/// Unknown.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_I_NEED_PARTY)]
+		public void CZ_I_NEED_PARTY(ChannelConnection conn, Packet packet)
+		{
+			return;
+		}
 	}
 
 	public enum TxType : short

@@ -36,6 +36,8 @@ namespace Melia.Login.Network
 			packet.PutInt(3); // accountPrivileges? <= 3 enables a kind of debug context menu
 			packet.PutString(conn.SessionKey, 64);
 			packet.PutInt(4475); // [i10725 (2015-11-03)] ?
+			packet.PutInt(9239);
+			packet.PutInt(67213);
 
 			conn.Send(packet);
 		}
@@ -67,12 +69,17 @@ namespace Melia.Login.Network
 				for (int i = 0; i < Items.EquipSlotCount; ++i)
 					packet.PutShort(0);
 
-				// Job history?
-				// While this short existed in iCBT1, it might not have
-				// been used, couldn't find a log.
-				// Example: A Mage that switched to Pyromancer has two
-				//   elements in this list, 2001 and 2002.
-				packet.PutShort(0); // count
+                // Some of these variables have to do with Lodge LAYER probably. (just a guess)
+                packet.PutByte(1);
+                packet.PutByte(1);
+                packet.PutByte(1);
+
+                // Job history?
+                // While this short existed in iCBT1, it might not have
+                // been used, couldn't find a log.
+                // Example: A Mage that switched to Pyromancer has two
+                //   elements in this list, 2001 and 2002.
+                packet.PutShort(0); // count
 				// loop
 				//   short jobId
 
@@ -85,8 +92,12 @@ namespace Melia.Login.Network
 			// Null terminated list of some kind?
 			// Example of != 0: 02 00 | 0B 00 00 00 01 00, 0C 00 00 00 00 00
 			packet.PutShort(0); // count?
+            
+            packet.PutShort(0); // unk
+            packet.PutInt(conn.Account.GetCharacters().Count()); // unk
+            packet.PutShort(conn.Account.GetCharacters().Count()); // unk
 
-			conn.Send(packet);
+            conn.Send(packet);
 		}
 
 		public static void BC_COMMANDER_CREATE(LoginConnection conn, Character character)
@@ -97,7 +108,23 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
-		public static void BC_BARRACKNAME_CHANGE(LoginConnection conn, TeamNameChangeResult result)
+
+        /// <summary>
+        /// sends the number of the new character's index
+        /// </summary>
+        /// <param name="conn"></param>
+        /// <param name="character"></param>
+        public static void BC_COMMANDER_CREATE_SLOTID(LoginConnection conn, Character character)
+        {
+            var packet = new Packet(Op.BC_COMMANDER_CREATE_SLOTID);
+            var characterCount = (byte)conn.Account.GetCharacters().Length;
+
+            packet.PutByte(characterCount);
+            conn.Send(packet);
+        }
+
+
+        public static void BC_BARRACKNAME_CHANGE(LoginConnection conn, TeamNameChangeResult result)
 		{
 			var response = new Packet(Op.BC_BARRACKNAME_CHANGE);
 			response.PutByte(result == TeamNameChangeResult.Okay);

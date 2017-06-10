@@ -41,6 +41,7 @@ namespace Melia.Shared.Network.Helpers
 			// [i11025 (2016-02-26)] ?
 			{
 				packet.PutInt(0);
+				packet.PutInt(0);
 			}
 		}
 	}

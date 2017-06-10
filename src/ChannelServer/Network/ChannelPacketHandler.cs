@@ -125,8 +125,9 @@ namespace Melia.Channel.Network
 			// ZC_NORMAL...
 			// ZC_OBJECT_PROPERTY...
 			// ZC_SKILL_ADD...
-			Send.ZC_JOB_PTS(character);
+			//Send.ZC_JOB_PTS(character);
 			Send.ZC_MOVE_SPEED(character);
+			Send.ZC_SEND_PREMIUM_STATE(character);
 
 			character.OpenEyes();
 		}

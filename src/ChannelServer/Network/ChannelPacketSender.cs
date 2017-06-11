@@ -1787,6 +1787,24 @@ namespace Melia.Channel.Network
 			character.Map.Broadcast(packet, character);
 		}
 
+		/// <summary>
+		/// Sends the visible areas of a map to a character.
+		/// </summary>
+		/// <param name="character"></param>
+		public static void ZC_MAP_REVEAL_LIST(ChannelConnection conn)
+		{
+			var packet = new Packet(Op.ZC_MAP_REVEAL_LIST);
+
+			packet.PutInt(conn.Account.MapVisibility.Count());
+			foreach (var pair in conn.Account.MapVisibility)
+			{
+				packet.PutInt(pair.Key);
+				packet.PutBin(pair.Value);
+			}
+
+			conn.Send(packet);
+		}
+
 		public static void ZC_SEND_PREMIUM_STATE(Character character)
 		{
 			var packet = new Packet(Op.ZC_SEND_PREMIUM_STATE);

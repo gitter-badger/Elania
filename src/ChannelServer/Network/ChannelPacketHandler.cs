@@ -107,6 +107,7 @@ namespace Melia.Channel.Network
 			Send.ZC_SKILLMAP_LIST(character);
 			Send.ZC_ACHIEVE_POINT_LIST(character);
 			Send.ZC_CHAT_MACRO_LIST(character);
+			Send.ZC_MAP_REVEAL_LIST(conn);
 			Send.ZC_NPC_STATE_LIST(character);
 			// ZC_HELP_LIST
 			// ZC_MYPAGE_MAP
@@ -1157,6 +1158,19 @@ namespace Melia.Channel.Network
 		public void CZ_I_NEED_PARTY(ChannelConnection conn, Packet packet)
 		{
 			return;
+		}
+
+		/// <summary>
+		/// Contains newly uncovered areas of a map.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_MAP_REVEAL_INFO)]
+		public void CZ_MAP_REVEAL_INFO(ChannelConnection conn, Packet packet)
+		{
+			var mapId = packet.GetInt();
+			var explored = packet.GetBin(128);
+			conn.Account.MapVisibility[mapId] = explored;
 		}
 	}
 

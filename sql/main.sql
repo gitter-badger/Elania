@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `melia` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `melia`;
+CREATE DATABASE IF NOT EXISTS `elania` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `elania`;
 
 CREATE TABLE IF NOT EXISTS `accounts` (
   `accountId` bigint(20) NOT NULL AUTO_INCREMENT,

@@ -1,8 +1,8 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Login.Database;
-using Melia.Shared.Network;
+using Elania.Login.Database;
+using Elania.Shared.Network;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.Network
+namespace Elania.Login.Network
 {
 	public class LoginConnection : Connection
 	{

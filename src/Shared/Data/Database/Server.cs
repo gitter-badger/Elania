@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Shared.Data.Database
+namespace Elania.Shared.Data.Database
 {
 	public class ServerData
 	{

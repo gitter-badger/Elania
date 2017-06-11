@@ -1,11 +1,11 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Shared;
-using Melia.Shared.Util;
-using Melia.Shared.Util.Commands;
-using Melia.Shared.Util.Configuration;
-using Melia.Web.Controllers;
+using Elania.Shared;
+using Elania.Shared.Util;
+using Elania.Shared.Util.Commands;
+using Elania.Shared.Util.Configuration;
+using Elania.Web.Controllers;
 using SharpExpress;
 using SharpExpress.Engines;
 using System;
@@ -15,7 +15,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Web
+namespace Elania.Web
 {
 	public class WebServer : Server
 	{

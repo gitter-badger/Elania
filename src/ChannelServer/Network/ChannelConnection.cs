@@ -1,10 +1,10 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Channel.Database;
-using Melia.Channel.Scripting;
-using Melia.Channel.World;
-using Melia.Shared.Network;
+using Elania.Channel.Database;
+using Elania.Channel.Scripting;
+using Elania.Channel.World;
+using Elania.Shared.Network;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Channel.Network
+namespace Elania.Channel.Network
 {
 	public class ChannelConnection : Connection
 	{

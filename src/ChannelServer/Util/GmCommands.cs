@@ -1,14 +1,14 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Channel.Network;
-using Melia.Channel.World;
-using Melia.Shared.Const;
-using Melia.Shared.Data;
-using Melia.Shared.Network;
-using Melia.Shared.Util;
-using Melia.Shared.Util.Commands;
-using Melia.Shared.World;
+using Elania.Channel.Network;
+using Elania.Channel.World;
+using Elania.Shared.Const;
+using Elania.Shared.Data;
+using Elania.Shared.Network;
+using Elania.Shared.Util;
+using Elania.Shared.Util.Commands;
+using Elania.Shared.World;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -16,7 +16,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Channel.Util
+namespace Elania.Channel.Util
 {
 	/// <summary>
 	/// GM command manager.

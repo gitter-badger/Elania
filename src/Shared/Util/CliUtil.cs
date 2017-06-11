@@ -8,11 +8,11 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Shared.Util
+namespace Elania.Shared.Util
 {
 	public static class CliUtil
 	{
-		private const string TitlePrefix = "Melia : ";
+		private const string TitlePrefix = "Elania : ";
 
 		private static readonly string[] Logo = new string[]
 		{

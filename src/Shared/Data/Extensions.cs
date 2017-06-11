@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Melia.Shared.Data
+namespace Elania.Shared.Data
 {
 	internal static class DictionaryExtensions
 	{

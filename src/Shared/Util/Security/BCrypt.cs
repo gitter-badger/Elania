@@ -19,7 +19,7 @@ using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Melia.Shared.Util.Security
+namespace Elania.Shared.Util.Security
 {
 	/// <summary>BCrypt implements OpenBSD-style Blowfish password hashing
 	/// using the scheme described in "A Future-Adaptable Password Scheme"

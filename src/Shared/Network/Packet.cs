@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Shared.Network
+namespace Elania.Shared.Network
 {
 	public class Packet
 	{

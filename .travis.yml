@@ -1,14 +1,14 @@
 language: csharp
 mono: 3.8.0
-solution: Melia.sln
+solution: Elania.sln
 branches:
   only:
     - master
 install:
-  - nuget restore Melia.sln
+  - nuget restore Elania.sln
   - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release Melia.sln
-  - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/build/aura-project/Melia/src/Melua/bin/Release/
+  - xbuild /p:Configuration=Release Elania.sln
+  - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/build/aura-project/Elania/src/Melua/bin/Release/
   - mono --debug ./testrunner/xunit.runners.*/tools/xunit.console.clr4.exe ./src/Test.ChannelServer/bin/Release/Test.ChannelServer.dll
   - mono --debug ./testrunner/xunit.runners.*/tools/xunit.console.clr4.exe ./src/Test.Melua/bin/Release/Test.Melua.dll

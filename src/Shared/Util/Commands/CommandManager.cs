@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace Melia.Shared.Util.Commands
+namespace Elania.Shared.Util.Commands
 {
 	/// <summary>
 	/// Generalized command manager

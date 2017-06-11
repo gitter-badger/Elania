@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Shared.Util
+namespace Elania.Shared.Util
 {
 	/// <summary>
 	/// All log levels. Also used as bitmask, for hiding.

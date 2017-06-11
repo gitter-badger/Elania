@@ -1,24 +1,24 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Channel.Database;
-using Melia.Channel.Network;
-using Melia.Channel.Scripting;
-using Melia.Channel.Util;
-using Melia.Channel.World;
-using Melia.Shared;
-using Melia.Shared.Database;
-using Melia.Shared.Network;
-using Melia.Shared.Util;
-using Melia.Shared.Util.Commands;
-using Melia.Shared.Util.Configuration;
+using Elania.Channel.Database;
+using Elania.Channel.Network;
+using Elania.Channel.Scripting;
+using Elania.Channel.Util;
+using Elania.Channel.World;
+using Elania.Shared;
+using Elania.Shared.Database;
+using Elania.Shared.Network;
+using Elania.Shared.Util;
+using Elania.Shared.Util.Commands;
+using Elania.Shared.Util.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Channel
+namespace Elania.Channel
 {
 	public class ChannelServer : Server
 	{

@@ -7,7 +7,7 @@
     <ProjectGuid>{81FD01FA-E633-4426-AD18-46FC607721A5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Melia.Web</RootNamespace>
+    <RootNamespace>Elania.Web</RootNamespace>
     <AssemblyName>WebServer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

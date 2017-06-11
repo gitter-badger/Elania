@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Melia.Shared.Util.Configuration.Files
+namespace Elania.Shared.Util.Configuration.Files
 {
 	public class CommandsConfFile : ConfFile
 	{

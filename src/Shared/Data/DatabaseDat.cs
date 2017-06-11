@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 
-namespace Melia.Shared.Data
+namespace Elania.Shared.Data
 {
 	public abstract class DatabaseDatIndexed<TIndex, TInfo> : Database<Dictionary<TIndex, TInfo>, TInfo> where TInfo : class, new()
 	{

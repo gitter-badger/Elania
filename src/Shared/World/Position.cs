@@ -4,7 +4,7 @@
 using System;
 using System.Globalization;
 
-namespace Melia.Shared.World
+namespace Elania.Shared.World
 {
 	public struct Position
 	{

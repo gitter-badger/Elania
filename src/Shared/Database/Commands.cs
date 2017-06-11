@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Shared.Database
+namespace Elania.Shared.Database
 {
 	/// <summary>
 	/// Base class for simplified MySQL commands.

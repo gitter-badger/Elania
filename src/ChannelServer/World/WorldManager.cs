@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Melia.Channel.World
+namespace Elania.Channel.World
 {
 	public class WorldManager
 	{

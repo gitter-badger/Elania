@@ -1,7 +1,7 @@
 Elania
 ==============================
 
-Elania is a MMORPG server development project and a fork of [Melia](https://github.com/aura-project/melia).
+Elania is a MMORPG server development project and a fork of [Melia](https://github.com/aura-project/Melia).
 
 This project is being developed for educational purposes.
 It is not about playing a game or competing with any services provided by

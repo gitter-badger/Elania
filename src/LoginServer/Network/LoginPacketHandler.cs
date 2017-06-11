@@ -474,5 +474,16 @@ namespace Elania.Login.Network
 		{
 			return;
 		}
+
+		/// <summary>
+		/// Request to purchase a new slot in the barracks.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_REQ_SLOT_PRICE)]
+		public void CB_REQ_SLOT_PRICE(LoginConnection conn, Packet packet)
+		{
+			Send.BC_REQ_SLOT_PRICE(conn, 50);
+		}
 	}
 }

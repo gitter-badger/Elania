@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
 
-namespace Melia.Channel.Scripting
+namespace Elania.Channel.Scripting
 {
 	public class Variables
 	{

@@ -6,7 +6,7 @@ function npc_test()
 
 	select(name .. "Well, hello there, {teamname}, how are you?", "Who are you?")
 	msg(name .. "Who {b}I{/} am?{np}I am {s30}{#ffffff}{ol}THAT Npc{/}{s20}{#111111} of course, the one and only! Hah!")
-	select(name2 .. "The only NPC Melia will ever have or need!!", "Uhm...")
+	select(name2 .. "The only NPC Elania will ever have or need!!", "Uhm...")
 	if select(name2 .. "Wait, what? I'm not gonna be the only one? I'm just a... test?", "Yea...", "Cancel") == 2 then
 		return
 	end

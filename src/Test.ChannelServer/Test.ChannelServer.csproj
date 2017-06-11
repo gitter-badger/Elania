@@ -7,7 +7,7 @@
     <ProjectGuid>{B818F174-3151-4FC3-99EB-2DA2A8465A50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Melia.Test.Channel</RootNamespace>
+    <RootNamespace>Elania.Test.Channel</RootNamespace>
     <AssemblyName>Test.ChannelServer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Melia.Shared.World
+namespace Elania.Shared.World
 {
 	/// <summary>
 	/// Describes the direction an entity is looking at.

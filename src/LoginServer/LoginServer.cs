@@ -1,15 +1,15 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Login.Database;
-using Melia.Login.Network;
-using Melia.Login.Util;
-using Melia.Shared;
-using Melia.Shared.Database;
-using Melia.Shared.Network;
-using Melia.Shared.Util;
-using Melia.Shared.Util.Commands;
-using Melia.Shared.Util.Configuration;
+using Elania.Login.Database;
+using Elania.Login.Network;
+using Elania.Login.Util;
+using Elania.Shared;
+using Elania.Shared.Database;
+using Elania.Shared.Network;
+using Elania.Shared.Util;
+using Elania.Shared.Util.Commands;
+using Elania.Shared.Util.Configuration;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login
+namespace Elania.Login
 {
 	public class LoginServer : Server
 	{

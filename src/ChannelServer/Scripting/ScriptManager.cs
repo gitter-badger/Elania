@@ -7,18 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MeluaLib;
-using Melia.Shared.Util;
+using Elania.Shared.Util;
 using System.IO;
-using Melia.Channel.World;
-using Melia.Shared.Const;
-using Melia.Shared.World;
-using Melia.Channel.Network;
+using Elania.Channel.World;
+using Elania.Shared.Const;
+using Elania.Shared.World;
+using Elania.Channel.Network;
 using System.Runtime.CompilerServices;
-using Melia.Shared.Network;
+using Elania.Shared.Network;
 using System.Threading;
 using System.Text.RegularExpressions;
 
-namespace Melia.Channel.Scripting
+namespace Elania.Channel.Scripting
 {
 	public class ScriptManager
 	{

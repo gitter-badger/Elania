@@ -1,5 +1,5 @@
-﻿using Melia.Channel.Database;
-using Melia.Shared.Const;
+﻿using Elania.Channel.Database;
+using Elania.Shared.Const;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Melia.Test.Channel.Database
+namespace Elania.Test.Channel.Database
 {
 	public class AccountSettingsTests
 	{

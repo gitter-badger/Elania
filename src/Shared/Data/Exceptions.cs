@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Melia.Shared.Data
+namespace Elania.Shared.Data
 {
 	public class DatabaseWarningException : Exception
 	{

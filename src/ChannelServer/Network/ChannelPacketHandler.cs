@@ -1,13 +1,13 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Channel.World;
-using Melia.Shared.Const;
-using Melia.Shared.Data.Database;
-using Melia.Shared.Database;
-using Melia.Shared.Network;
-using Melia.Shared.Util;
-using Melia.Shared.World;
+using Elania.Channel.World;
+using Elania.Shared.Const;
+using Elania.Shared.Data.Database;
+using Elania.Shared.Database;
+using Elania.Shared.Network;
+using Elania.Shared.Util;
+using Elania.Shared.World;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,7 +19,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Melia.Channel.Network
+namespace Elania.Channel.Network
 {
 	public class ChannelPacketHandler : PacketHandler<ChannelConnection>
 	{

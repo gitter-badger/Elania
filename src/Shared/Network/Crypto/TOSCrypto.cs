@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Melia.Shared.Network.Crypto
+namespace Elania.Shared.Network.Crypto
 {
 	public partial class TOSCrypto
 	{

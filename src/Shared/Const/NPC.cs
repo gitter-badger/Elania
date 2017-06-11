@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Shared.Const
+namespace Elania.Shared.Const
 {
 	public enum NpcType : byte
 	{

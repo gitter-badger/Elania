@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Web.Controllers
+namespace Elania.Web.Controllers
 {
 	public class StaticConfigController : IController
 	{

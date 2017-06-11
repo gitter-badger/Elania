@@ -1,4 +1,4 @@
------ Melia Script ----------------------------------------------------------
+----- Elania Script ----------------------------------------------------------
 -- One Liner
 ----- Description -----------------------------------------------------------
 -- If a localization key or the name of a client-side dialog are passed to

@@ -1,11 +1,11 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Channel.Scripting;
+using Elania.Channel.Scripting;
 using System;
 using Xunit;
 
-namespace Melia.Test.Channel.Scripting
+namespace Elania.Test.Channel.Scripting
 {
 	public class VariablesTests
 	{

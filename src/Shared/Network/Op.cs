@@ -4,7 +4,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Melia.Shared.Network
+namespace Elania.Shared.Network
 {
 	/// <summary>
 	/// Packet enums.

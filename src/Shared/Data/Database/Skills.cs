@@ -4,7 +4,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 
-namespace Melia.Shared.Data.Database
+namespace Elania.Shared.Data.Database
 {
 	[Serializable]
 	public class SkillData

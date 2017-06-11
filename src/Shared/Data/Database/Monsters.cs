@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Melia.Shared.Data.Database
+namespace Elania.Shared.Data.Database
 {
 	[Serializable]
 	public class MonsterData

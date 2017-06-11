@@ -30,6 +30,11 @@ namespace Elania.Login.World
 		public Position BarrackPosition { get; set; }
 
 		/// <summary>
+		/// The barrack layer the character belongs to.
+		/// </summary>
+		public int BarrackLayer { get; set; }
+
+		/// <summary>
 		/// Creates new character.
 		/// </summary>
 		public Character()

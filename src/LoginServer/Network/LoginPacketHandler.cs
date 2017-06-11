@@ -141,6 +141,7 @@ namespace Elania.Login.Network
 		[PacketHandler(Op.CB_CURRENT_BARRACK)]
 		public void CB_CURRENT_BARRACK(LoginConnection conn, Packet packet)
 		{
+			var accountId = packet.GetLong();
 		}
 
 		/// <summary>
@@ -284,6 +285,8 @@ namespace Elania.Login.Network
 			character.Spr = jobData.Spr;
 			character.Dex = jobData.Dex;
 
+			character.BarrackLayer = conn.Account.CurrentBarrackLayer;
+
 			conn.Account.CreateCharacter(character);
 
 			Send.BC_COMMANDER_CREATE_SLOTID(conn, character);
@@ -331,7 +334,9 @@ namespace Elania.Login.Network
 		[PacketHandler(Op.CB_SELECT_BARRACK_LAYER)]
 		public void CB_SELECT_BARRACK_LAYER(LoginConnection conn, Packet packet)
 		{
-			// temporarily resend the current list
+			conn.Account.CurrentBarrackLayer = packet.GetInt();
+			var unk1 = packet.GetShort();
+
 			Send.BC_COMMANDER_LIST(conn);
 		}
 

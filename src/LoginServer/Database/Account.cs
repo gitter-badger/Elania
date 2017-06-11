@@ -57,6 +57,20 @@ namespace Elania.Login.Database
 		public int SelectedBarrack { get; set; }
 
 		/// <summary>
+		/// Barrack layer number being displayed
+		/// </summary>
+		public int CurrentBarrackLayer
+		{
+			get { return _currentBarrackLayer; }
+			set
+			{
+				if (value > 0)
+					_currentBarrackLayer = value;
+			}
+		}
+		private int _currentBarrackLayer = 1;
+
+		/// <summary>
 		/// Creates new account.
 		/// </summary>
 		public Account()
@@ -70,11 +84,17 @@ namespace Elania.Login.Database
 		/// <summary>
 		/// Returns list of all characters on account.
 		/// </summary>
+		/// <param name="filterLayer">Returns only characters of the current selected barrack layer.</param>
 		/// <returns></returns>
-		public Character[] GetCharacters()
+		public Character[] GetCharacters(bool filterLayer = true)
 		{
 			lock (_characters)
-				return _characters.ToArray();
+			{
+				if (filterLayer)
+					return _characters.Where(x => x.BarrackLayer == this.CurrentBarrackLayer).ToArray();
+				else
+					return _characters.ToArray();
+			}
 		}
 
 		/// <summary>
@@ -181,7 +201,7 @@ namespace Elania.Login.Database
 		/// <param name="character"></param>
 		public void CreateCharacter(Character character)
 		{
-			LoginServer.Instance.Database.CreateCharacter(this.Id, character);
+			LoginServer.Instance.Database.CreateCharacter(this, character);
 			this.AddCharacter(character);
 		}
 

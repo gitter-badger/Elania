@@ -127,12 +127,12 @@ namespace Elania.Login.Database
 		/// <param name="accountId"></param>
 		/// <param name="character"></param>
 		/// <returns></returns>
-		public void CreateCharacter(long accountId, Character character)
+		public void CreateCharacter(Account account, Character character)
 		{
 			using (var conn = this.GetConnection())
 			using (var cmd = new InsertCommand("INSERT INTO `characters` {0}", conn))
 			{
-				cmd.Set("accountId", accountId);
+				cmd.Set("accountId", account.Id);
 				cmd.Set("name", character.Name);
 				cmd.Set("teamName", character.TeamName);
 				cmd.Set("job", character.Job);
@@ -158,6 +158,8 @@ namespace Elania.Login.Database
 				cmd.Set("int", character.Int);
 				cmd.Set("spr", character.Spr);
 				cmd.Set("dex", character.Dex);
+
+				cmd.Set("barrackLayer", account.CurrentBarrackLayer);
 
 				cmd.Execute();
 				character.Id = cmd.LastId;
@@ -234,6 +236,8 @@ namespace Elania.Login.Database
 							var by = reader.GetFloat("by");
 							var bz = reader.GetFloat("bz");
 							character.BarrackPosition = new Position(bx, by, bz);
+
+							character.BarrackLayer = reader.GetInt16("barrackLayer");
 
 							result.Add(character);
 						}

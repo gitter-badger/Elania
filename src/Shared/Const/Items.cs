@@ -119,7 +119,46 @@ namespace Elania.Shared.Const
 		/// Ids of the items equipped by default.
 		/// (Literally empty items, NoHat, NoWeapon, etc.)
 		/// </summary>
-		public static readonly int[] DefaultItems = new int[EquipSlotCount] { 2, 2, 2, 531101, 6, 7, 10000, 11000, 9999996, 9999996, 2, 9, 9, 4, 521101, 9, 9, 9, 9, 10, 2, 4 };
+		public static readonly int[] DefaultItems = new int[EquipSlotCount]
+		{
+			(int)DefaultEquipment.NoHat,
+			(int)DefaultEquipment.NoHat,
+			(int)DefaultEquipment.NoHat,
+			(int)DefaultEquipment.LightArmor,
+			(int)DefaultEquipment.NoGloves,
+			(int)DefaultEquipment.NoBoots,
+			(int)DefaultEquipment.NoHelmet,
+			(int)DefaultEquipment.NoArmband,
+			(int)DefaultEquipment.NoWeapon,
+			(int)DefaultEquipment.NoWeapon,
+			(int)DefaultEquipment.NoHat,
+			(int)DefaultEquipment.NoRing,
+			(int)DefaultEquipment.NoRing,
+			(int)DefaultEquipment.NoOuter,
+			(int)DefaultEquipment.LightPants,
+			(int)DefaultEquipment.NoRing,
+			(int)DefaultEquipment.NoRing,
+			(int)DefaultEquipment.NoRing,
+			(int)DefaultEquipment.NoRing,
+			(int)DefaultEquipment.NoNeck,
+			(int)DefaultEquipment.NoHat,
+			(int)DefaultEquipment.NoOuter
+		};
+	}
+
+	public enum DefaultEquipment : int
+	{
+		NoHat = 2,
+		NoOuter = 4,
+		NoGloves = 6,
+		NoBoots = 7,
+		NoRing = 9,
+		NoNeck = 10,
+		NoHelmet = 10000,
+		NoArmband = 11000,
+		LightPants = 521101,
+		LightArmor = 531101,
+		NoWeapon = 9999996,
 	}
 
 	public enum InventoryOrder : byte

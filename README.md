@@ -1,7 +1,7 @@
-Sekuya
+Elania
 ==============================
 
-Sekuya is a MMORPG server development project and a fork of [Melia](https://github.com/aura-project/melia).
+Elania is a MMORPG server development project and a fork of [Melia](https://github.com/aura-project/melia).
 
 This project is being developed for educational purposes.
 It is not about playing a game or competing with any services provided by
@@ -13,4 +13,4 @@ All work done before the creation of this fork is credited to the Aura Project t
 
 Build Status
 -------
-[![Build Status](https://travis-ci.org/celophi/Sekuya.svg?branch=master)](https://travis-ci.org/celophi/Sekuya)
+[![Build Status](https://travis-ci.org/celophi/Elania.svg?branch=master)](https://travis-ci.org/celophi/Elania)

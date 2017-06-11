@@ -1,6 +1,8 @@
 Elania
 ==============================
 
+[![Join the chat at https://gitter.im/elania-dev/Lobby](https://badges.gitter.im/elania-dev/Lobby.svg)](https://gitter.im/elania-dev/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Elania is a MMORPG server development project and a fork of [Melia](https://github.com/aura-project/Melia).
 
 This project is being developed for educational purposes.

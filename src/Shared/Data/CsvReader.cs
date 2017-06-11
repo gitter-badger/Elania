@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 
-namespace Melia.Shared.Data
+namespace Elania.Shared.Data
 {
 	public class CsvReader : IDisposable
 	{

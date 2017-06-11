@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Melia.Channel.Scripting
+namespace Elania.Channel.Scripting
 {
 	/// <summary>
 	/// References a Lua thread.

@@ -3,9 +3,9 @@
 
 using System;
 using Newtonsoft.Json.Linq;
-using Melia.Shared.Const;
+using Elania.Shared.Const;
 
-namespace Melia.Shared.Data.Database
+namespace Elania.Shared.Data.Database
 {
 	[Serializable]
 	public class StartingCityData

@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Melia.Shared.Util
+namespace Elania.Shared.Util
 {
 	/// <summary>
 	/// General use class to read files line for line.

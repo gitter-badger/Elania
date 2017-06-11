@@ -1,11 +1,11 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Channel.Network;
-using Melia.Channel.World;
+using Elania.Channel.Network;
+using Elania.Channel.World;
 using System;
 
-namespace Melia.Channel.Scripting
+namespace Elania.Channel.Scripting
 {
 
 	public class ScriptState

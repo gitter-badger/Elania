@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Melia.Web.Controllers
+namespace Elania.Web.Controllers
 {
 	public class ServerListController : IController
 	{
@@ -34,7 +34,7 @@ namespace Melia.Web.Controllers
 					xml.WriteAttributeString("GROUP_ID", "100");
 					xml.WriteAttributeString("TRAFFIC", "0");
 					xml.WriteAttributeString("ENTER_LIMIT", "100");
-					xml.WriteAttributeString("NAME", "Melia");
+					xml.WriteAttributeString("NAME", "Elania");
 					xml.WriteAttributeString("Server0_IP", serverData.Ip);
 					xml.WriteAttributeString("Server0_Port", serverData.Port.ToString());
 					xml.WriteEndElement();

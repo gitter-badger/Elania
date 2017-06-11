@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Net;
 
-namespace Melia.Shared.Util
+namespace Elania.Shared.Util
 {
 	public static class Extensions
 	{

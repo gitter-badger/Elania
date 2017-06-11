@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Melia.Shared.Data
+namespace Elania.Shared.Data
 {
 	public interface IDatabase
 	{

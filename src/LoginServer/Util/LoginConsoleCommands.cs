@@ -1,11 +1,11 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Shared.Util;
-using Melia.Shared.Util.Commands;
+using Elania.Shared.Util;
+using Elania.Shared.Util.Commands;
 using System.Collections.Generic;
 
-namespace Melia.Login.Util
+namespace Elania.Login.Util
 {
 	public class LoginConsoleCommands : ConsoleCommands
 	{

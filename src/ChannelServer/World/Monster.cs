@@ -1,14 +1,14 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Channel.Network;
-using Melia.Shared.Const;
-using Melia.Shared.Data.Database;
-using Melia.Shared.Util;
-using Melia.Shared.World;
+using Elania.Channel.Network;
+using Elania.Shared.Const;
+using Elania.Shared.Data.Database;
+using Elania.Shared.Util;
+using Elania.Shared.World;
 using System;
 
-namespace Melia.Channel.World
+namespace Elania.Channel.World
 {
 	public class Monster : IEntity
 	{

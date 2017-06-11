@@ -1,10 +1,10 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Shared.Const;
+using Elania.Shared.Const;
 using System;
 
-namespace Melia.Shared.Network.Helpers
+namespace Elania.Shared.Network.Helpers
 {
 	public static class CommanderHelper
 	{

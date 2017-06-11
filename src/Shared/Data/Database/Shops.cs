@@ -5,9 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
-using Melia.Shared.Const;
+using Elania.Shared.Const;
 
-namespace Melia.Shared.Data.Database
+namespace Elania.Shared.Data.Database
 {
 	[Serializable]
 	public class ShopData

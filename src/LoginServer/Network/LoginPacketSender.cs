@@ -1,13 +1,13 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Login.Database;
-using Melia.Login.Network.Helpers;
-using Melia.Login.World;
-using Melia.Shared.Const;
-using Melia.Shared.Network;
-using Melia.Shared.Network.Helpers;
-using Melia.Shared.Util;
+using Elania.Login.Database;
+using Elania.Login.Network.Helpers;
+using Elania.Login.World;
+using Elania.Shared.Const;
+using Elania.Shared.Network;
+using Elania.Shared.Network.Helpers;
+using Elania.Shared.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.Network
+namespace Elania.Login.Network
 {
 	public static class Send
 	{

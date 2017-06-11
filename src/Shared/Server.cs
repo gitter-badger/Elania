@@ -1,10 +1,10 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Shared.Data;
-using Melia.Shared.Database;
-using Melia.Shared.Util;
-using Melia.Shared.Util.Configuration;
+using Elania.Shared.Data;
+using Elania.Shared.Database;
+using Elania.Shared.Util;
+using Elania.Shared.Util.Configuration;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Shared
+namespace Elania.Shared
 {
 	/// <summary>
 	/// Base class for server applications.
@@ -29,14 +29,14 @@ namespace Melia.Shared
 		/// <summary>
 		/// File databases.
 		/// </summary>
-		public MeliaData Data { get; private set; }
+		public ElaniaData Data { get; private set; }
 
 		/// <summary>
 		/// Initializes class.
 		/// </summary>
 		public Server()
 		{
-			this.Data = new MeliaData();
+			this.Data = new ElaniaData();
 		}
 
 		/// <summary>
@@ -54,7 +54,7 @@ namespace Melia.Shared
 		/// <summary>
 		/// Initializes database connection with data from Conf.
 		/// </summary>
-		protected void InitDatabase(MeliaDb db)
+		protected void InitDatabase(ElaniaDb db)
 		{
 			try
 			{

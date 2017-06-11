@@ -7,7 +7,7 @@
     <ProjectGuid>{7C85948A-9771-478E-98BB-97D6D2D60A19}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Melia.Login</RootNamespace>
+    <RootNamespace>Elania.Login</RootNamespace>
     <AssemblyName>LoginServer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

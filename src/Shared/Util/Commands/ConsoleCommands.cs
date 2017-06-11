@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Melia.Shared.Util.Commands
+namespace Elania.Shared.Util.Commands
 {
 	/// <summary>
 	/// Console command manager

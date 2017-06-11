@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace Melia.Shared.Data
+namespace Elania.Shared.Data
 {
 	/// <summary>
 	/// CSV database base class

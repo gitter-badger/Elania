@@ -3,7 +3,7 @@
 
 using System.Globalization;
 
-namespace Melia.Shared.World
+namespace Elania.Shared.World
 {
 	public struct Location
 	{

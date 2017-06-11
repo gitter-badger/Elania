@@ -2,10 +2,10 @@
 // For more information, see license file in the main folder
 
 using System;
-using Melia.Shared.Const;
-using Melia.Shared.Network;
+using Elania.Shared.Const;
+using Elania.Shared.Network;
 
-namespace Melia.Channel.Network.Helpers
+namespace Elania.Channel.Network.Helpers
 {
 	public static class SkillHelper
 	{

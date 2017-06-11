@@ -1,9 +1,9 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Shared.Database;
-using Melia.Shared.Network.Crypto;
-using Melia.Shared.Util;
+using Elania.Shared.Database;
+using Elania.Shared.Network.Crypto;
+using Elania.Shared.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 
-namespace Melia.Shared.Network
+namespace Elania.Shared.Network
 {
 	public abstract class Connection
 	{

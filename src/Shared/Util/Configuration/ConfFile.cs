@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Globalization;
 
-namespace Melia.Shared.Util.Configuration
+namespace Elania.Shared.Util.Configuration
 {
 	/// <summary>
 	/// Configuration options manager.
